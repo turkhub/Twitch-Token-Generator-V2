@@ -1,3 +1,3 @@
 :loop
-node ICE-Twitch.js
+node ayu.js
 goto loop
