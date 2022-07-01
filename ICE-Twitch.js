@@ -13,11 +13,13 @@ fs = require('fs');
 
 var intro = 
 `
-\t\t\t\t\t\tIII  CCC EEEE     TTTTTT  OOO   OOO  L     SSS  
-\t\t\t\t\t\t I  C    E          TT   O   O O   O L    S     
-\t\t\t\t\t\t I  C    EEE        TT   O   O O   O L     SSS  
-\t\t\t\t\t\t I  C    E          TT   O   O O   O L        S 
-\t\t\t\t\t\tIII  CCC EEEE       TT    OOO   OOO  LLLL SSSS  
+
+░██████╗░███████╗███╗░░██╗  ██╗░░░██╗██████╗░
+██╔════╝░██╔════╝████╗░██║  ██║░░░██║╚════██╗
+██║░░██╗░█████╗░░██╔██╗██║  ╚██╗░██╔╝░░███╔═╝
+██║░░╚██╗██╔══╝░░██║╚████║  ░╚████╔╝░██╔══╝░░
+╚██████╔╝███████╗██║░╚███║  ░░╚██╔╝░░███████╗
+░╚═════╝░╚══════╝╚═╝░░╚══╝  ░░░╚═╝░░░╚══════╝ 
                                                 
 `
 
@@ -29,7 +31,7 @@ var accounts = fs.createWriteStream('accounts.txt', {
   })
 
 function get_title() {
-    return `ICE TOOLS | Generated: ${generated} | Failed: ${failed}`
+    return `Ayu | Generated: ${generated} | Failed: ${failed}`
 }
 
 ;(async () => {
@@ -37,7 +39,7 @@ function get_title() {
         process.title = get_title()
         console.clear()
         console.log(intro.brightBlue)
-        console.log('\n\n                                                      ~ '.brightBlue + 'discord.gg/icetools'.brightRed + '\n')
+        console.log('\n\n                                                      ~ '.brightBlue + 'discord.gg/ro-mart'.brightRed + '\n')
         var threads = parseInt(prompt('                                                      ~ '.brightBlue + '> Threads -> '.brightRed))
         console.clear()
         console.log(intro.brightGreen)
@@ -56,8 +58,8 @@ async function generate() {
     var page1 = await browser.newPage()
     const cursor = await createCursor(page1)
 
-    var username = crypto.randomBytes(2).toString('hex') + 'icetools'
-    var password = 'Ice20Tools!on!top'
+    var username = crypto.randomBytes(2).toString('hex') + 'Ayuskid'
+    var password = '@Ayuiscute2000@'
     var email = crypto.randomBytes(4).toString('hex') + '@gmail.com'
 
     await page1.goto('https://www.twitch.tv/de');
